@@ -383,7 +383,7 @@ Si segua lentamente formulazione e dimostrazione per questo tanto articolato qua
   \begin{proof}
     La dimostrazione è ovviamente per contraddizione, perché la nostra supposizione è che \(\L\) sia libero e stiamo per tentare di verificare la validità del negato della tesi del pumping lemma e questo contraddirrebbe la nostra supposizione (Eq.\ref{eq:pl-neg-abstract}). Diamo il via alle danze:
     \begin{itemize}
-      \item prendiamoci un intero \(P \in \mathbb{N}^+\) scelto arbitrariamente (Eq.\ref{eq:pl-neg_1});
+      \item prendiamoci un intero \(p \in \mathbb{N}^+\) scelto arbitrariamente (Eq.\ref{eq:pl-neg_1});
       \item scegliamoci una parola \(z\) che appartenga a \(\L\) e abbia una lunghezza maggiore di \(p\); noi scegliamo la parola \(z = a^pb^pc^p\), che ha lunghezza \(|z| = 3p > p\) e certamente appartiene al linguaggio:
       \begin{equation*}
         \underbrace{aa...a}_\text{\emph{p}}\underbrace{bb...b}_\text{\emph{p}}\underbrace{cc...c}_\text{\emph{p}}
@@ -393,7 +393,7 @@ Si segua lentamente formulazione e dimostrazione per questo tanto articolato qua
       \begin{itemize}
         \item sono una decomposizione della parola \(z\) (\(z = uvwxy\));
         \item la sottostringa \(vwx\) ha dimensione inferiore o uguale a \(p\) (\(|vwx| \le p\));
-        \item le due sottostringe \(v\) e \(x\) hanno dimensione non nulla (\(|vx| > 0\));
+        \item le due sottostringe \(v\) e \(x\) non hanno entrambe dimensione nulla (\(|vx| > 0\));
       \end{itemize}
       notiamo in particolare quali posizioni potrà assumere la sottostringa \(vwx\) all'interno della parola \(z\):
       \begin{equation*}
